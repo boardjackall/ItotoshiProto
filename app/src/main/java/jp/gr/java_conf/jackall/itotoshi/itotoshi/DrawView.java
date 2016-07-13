@@ -35,6 +35,7 @@ public class DrawView extends SurfaceView implements SurfaceHolder.Callback, Run
     float width, height;
     float y[];
     float vy = (float)-0.5;
+    
     int i,j;
 
     public DrawView(Context context, AttributeSet atr) {
