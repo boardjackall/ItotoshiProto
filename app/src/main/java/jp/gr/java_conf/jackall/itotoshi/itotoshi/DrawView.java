@@ -30,8 +30,8 @@ public class DrawView extends SurfaceView implements SurfaceHolder.Callback, Run
     Bitmap bmp2= BitmapFactory.decodeResource(getResources(),R.drawable.needle2);
     float r1x,r2x;
     float r1y,r2y;
-    float tuuroysize=200;
-    float tuuroxsize=12;
+    float tuuroysize;//=200;
+    float tuuroxsize;//12;
     float width, height;
     float y[];
     float vy = (float)-0.5;
@@ -53,10 +53,12 @@ public class DrawView extends SurfaceView implements SurfaceHolder.Callback, Run
         count=0;
         score=0;
         r1x=getWidth()/5*6;
-        r2x=(float)((getWidth()/5*6)*1.5)-100;
+        r2x=(float)((getWidth()/5*6)*1.5);
         r1y=getHeight();
         vy = (float)-0.3;
         r2y=500;
+        tuuroysize=(float)(getWidth()/5.37);
+        tuuroxsize=(float)(getWidth()/71.6);
         aue=(getHeight()/3*2)/36;
         asita=(getHeight()/3*2)/23;//24;
         bmp1 = Bitmap.createScaledBitmap(bmp1,40,getHeight()/3*2,false);
