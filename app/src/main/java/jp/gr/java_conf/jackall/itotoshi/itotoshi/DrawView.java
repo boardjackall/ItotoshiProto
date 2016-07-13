@@ -66,7 +66,6 @@ public class DrawView extends SurfaceView implements SurfaceHolder.Callback, Run
         y = new float[getWidth() / 2];
         for (i = 0; i < getWidth() / 2; i++) {
             y[i] = 0;
-
         }
     }
 
